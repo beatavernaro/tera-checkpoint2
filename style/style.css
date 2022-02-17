@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+    --main-red-color: #932D3C;
+    --main-yellow-color: #E89345;
+    --light-color: #FEF8F8;
+    --roboto: 'Roboto', sans-serif;
+    --cinza: #555555;
+    --rosa: #EE9591;
+    --cinza-claro: #F6F6F6;
+    --cinza-medio: #888888;
+  }
+
+main{
+    font-family: var(--roboto);
+}
+
+.main-bg-color{
+    background-color: var(--light-color)
+}
+
+/* NAVBAR BEGIN */
+.navbar-style{
+    font-family: var(--roboto);
+}
+
+.navbar-logo{
+    font-family: 'Lobster', cursive;
+    color: var(--cinza)!important;
+    font-size: 2rem !important;
+}
+
+.navbar-border{
+    box-shadow: #932D3C 0px 1px 3px, #932D3C 0px 1px 2px;;
+}
+
+#btn-header{
+    background-color: var(--main-red-color);
+    color: var(--cinza-claro);
+    box-shadow: 10px 10px 30px rgba(234, 136, 152, 0.4);
+}
+
+.btn-animation:hover{
+    animation: pulse;
+    animation-duration: 1s;
+}
+
+#btn-header-line{
+    border-color: var(--main-red-color);
+    color: var(--main-red-color);
+    box-shadow: 10px 10px 30px rgba(234, 136, 152, 0.4);
+    background-color: var(--light-color);
+}
+
+/* NAVBAR END */ 
+
+/* BANNER SECTION BEGIN */
+#btn-action{
+    background-color: var(--main-red-color);
+    box-shadow: 16px 16px 60px rgba(255, 0, 43, 0.4);
+    color: var(--light-color);
+    font-family: var(--roboto);
+}
+
+.text-color{
+    color: var(--cinza);
+}
+
+/* BANNER SECTION END */
+
+/* CARDS SECTION BEGIN */
+.card-style{
+    background-color: var(--light-color) !important;
+    border-color: var(--main-red-color) !important;
+   /* box-shadow: 10px 10px 30px rgba(255, 0, 43, 0.096) !important; */
+    color: var(--cinza) !important;
+    height: 350px;
+}
+
+.cards-container-bg{
+    background-color: var(--main-red-color) !important;
+}
+
+a{
+    text-decoration: none!important;
+}
+
+.card-text-size{
+    font-size: 3.5rem;
+}
+
+.center-align{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-style-card{
+    text-transform: uppercase;
+}
+
+/* CARDS SECTION END */
+
+/* FOOTER BEGIN */
+
+.bordere-footer{
+    box-shadow: 10px 0px 34px -9px rgba(204,43,94,1);
+}
+
+.footer-style{
+    font-family: var(--roboto);
+    color: var(--cinza)!important;
+}
+
+/* FOOTER END */
+
+/*CADASTRO BEGIN */
+.box-form-style{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/*CADASTRO END */
+
+
+/* CARDS ANIMATION BEGIN */
+.container-animation {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 40px 0;
+}
+
+.container-animation .card {
+	position: relative;
+	height: 400px;
+	background: rgba(255, 255, 255, 0.05);
+	margin: 20px;
+	box-shadow: 0 15px 35px var(--rosa);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px);
+}
+
+.container-animation .card .content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
+}
+
+.container-animation .card:hover .content {
+	transform: translateY(-20px);
+}
+
+.container-animation .card .content .imgBx {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+}
+
+.container-animation .card .content .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container-animation .card .content .contentBx h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+}
+
+.container-animation .card .content .contentBx h3 span {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: initial;
+}
+
+.container-animation .card .sci {
+	position: absolute;
+	bottom: 50px;
+	display: flex;
+}
+
+.container-animation .card .sci li {
+	list-style: none;
+	margin-left: 0px;
+	transform: translateY(40px);
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.style-hover-card{
+    border-bottom: 1px solid var(--light-color);
+    padding-bottom: 0.5rem;
+}
+
+ul{
+    padding-left: 0rem !important; 
+}
+
+.container-animation .card:hover .sci li {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.container-animation .card .sci li a {
+	color: #fff;
+	font-size: 20px;
+}
+
+.font-style-roboto{
+    font-family: 'Roboto', sans-serif !important;
+}
+/* CARDS ANIMATION END */
